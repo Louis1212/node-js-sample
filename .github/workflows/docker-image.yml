@@ -10,7 +10,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: action/checkout@v3
+    - uses: actions/checkout@v3
     - name: testApp
       run: |
           docker build . -t louis1212/node-js_sample:latest
