@@ -14,7 +14,7 @@ jobs:
     - name: testApp
       run: |
           docker build . -t louis1212/node-js_sample:latest
-          docker run -p 8080:8080 -d louis1212/node-js_sample:latest
+          docker run -p 8080:8080 -d louis1212/node-js_sample
           sleep 2
           curl I localhost:8080 | grep "200 OK"
     
